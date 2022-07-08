@@ -1,21 +1,22 @@
 {
-  "name": "interactivewallpaper",
-  "private": true,
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.7",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.4",
-    "vite": "^2.9.9"
-  },
-  "dependencies": {
-    "animejs": "^3.2.1",
-    "typed.js": "^2.0.12",
-    "vanta": "^0.5.22"
-  }
+	"name": "interactivewallpaper",
+	"private": true,
+	"version": "0.0.0",
+	"homepage": ".",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.7",
+		"postcss": "^8.4.14",
+		"tailwindcss": "^3.1.4",
+		"vite": "^2.9.9"
+	},
+	"dependencies": {
+		"animejs": "^3.2.1",
+		"typed.js": "^2.0.12",
+		"vanta": "^0.5.22"
+	}
 }
