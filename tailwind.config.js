@@ -2,7 +2,14 @@
 module.exports = {
 	content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
 	theme: {
-		extend: {},
+		extend: {
+			backgroundImage: {
+				first: `url('./src/assets/first.jpg')`,
+			},
+			fontFamily: {
+				main: ['Montserrat', 'sans-serif'],
+			},
+		},
 	},
 	plugins: [],
 }
