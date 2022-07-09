@@ -16,6 +16,7 @@
 	},
 	"dependencies": {
 		"animejs": "^3.2.1",
+		"sass": "^1.53.0",
 		"typed.js": "^2.0.12",
 		"vanta": "^0.5.22"
 	}
