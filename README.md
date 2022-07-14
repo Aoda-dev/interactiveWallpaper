@@ -1,6 +1,8 @@
 # interactivewallpaper
 Pure interactive wallpaper
 
-## simple interactive wallpaper with tailwind and anime, vanta js
+## simple interactive wallpaper
+
+used tools:  vite, tailwind, animejs, vantajs, typedjs
 
 # link here is link https://interactivewallpaper.vercel.app/
