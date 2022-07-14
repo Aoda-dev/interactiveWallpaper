@@ -2,7 +2,6 @@ import anime from 'animejs'
 import BIRDS from 'vanta/dist/vanta.birds.min'
 
 import first from '/img/first.jpg'
-import second from '/img/second.jpg'
 
 export const mainLoad = () => {
 	return new Promise((resolve) => {
@@ -12,8 +11,6 @@ export const mainLoad = () => {
 		document.querySelector('#app').innerHTML = `
 			<div class="overflow-hidden relative w-screen h-screen bg-slate-800 flex flex-col items-center justify-center text-white">
 				<img class="origin-container" src=${first} alt="first" />
-				<img class="origin-container" src=${second} alt="first" />
-
 			
 				<div class="animate-top w-screen absolute h-1/2 bg-black text-black/0">empty</div>
 				<div class="animate-bot w-screen absolute h-1/2 bg-black text-black/0">empty</div>
