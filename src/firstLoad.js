@@ -1,4 +1,8 @@
-import { hideTopAndBottomAnimation, showAndAnimationText, showTopAndBottomAnimation } from './firstLoad.helper'
+import {
+	hideTopAndBottomAnimation,
+	showAndAnimationText,
+	showTopAndBottomAnimation,
+} from './firstLoad.helper'
 import { loading } from './loading'
 
 export const firstLoad = async () => {

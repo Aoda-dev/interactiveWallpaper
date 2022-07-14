@@ -2,9 +2,14 @@
 @tailwind components
 @tailwind utilities
 
+$bg-first: url('./first.jpg')
+$bg-second: url('./second.jpg')
+
 @layer utilities 
 	.origin-container
-		@apply overflow-hidden relative w-screen h-screen bg-slate-800 bg-blend-overlay bg-second bg-cover bg-center bg-fixed flex flex-col items-center justify-center text-white
+		@apply overflow-hidden relative w-screen h-screen bg-slate-800 bg-blend-overlay bg-cover bg-center bg-fixed flex flex-col items-center justify-center text-white
+
+		background-image: $bg-second
 		animation: anim infinity 0.5s
 
 		// @keyframes anim
@@ -16,7 +21,9 @@
 	.glitch-active
 		&::before
 			content: ''
-			@apply absolute w-screen h-screen bg-blend-overlay bg-first bg-cover bg-center bg-fixed
+			@apply absolute w-screen h-screen bg-blend-overlay bg-cover bg-center bg-fixed
+
+			background-image: $bg-first
 			animation: anim 0.3s infinite
 
 			@keyframes anim
