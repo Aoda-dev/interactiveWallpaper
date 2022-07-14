@@ -48,7 +48,7 @@ export const mainLoad = () => {
 			const [time, timeFormat] = date.toLocaleTimeString().split(' ')
 
 			timeWrapper.innerText = time
-			timeFormatWrapper.innerText = timeFormat
+			timeFormatWrapper.innerText = timeFormat ?? null
 		}, 1000)
 
 		anime({
