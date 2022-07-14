@@ -5,8 +5,8 @@ module.exports = {
 	theme: {
 		extend: {
 			backgroundImage: {
-				first: 'url("./src/assets/first.jpg")',
-				second: 'url("./src/assets/second.jpg")',
+				first: 'url("/img/first.jpg")',
+				second: 'url("/img/second.jpg")',
 			},
 			fontFamily: {
 				main: ['Montserrat', 'sans-serif'],
