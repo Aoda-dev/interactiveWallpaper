@@ -1,13 +1,20 @@
 import anime from 'animejs'
 import BIRDS from 'vanta/dist/vanta.birds.min'
 
+import first from '/img/first.jpg'
+import second from '/img/second.jpg'
+
 export const mainLoad = () => {
 	return new Promise((resolve) => {
 		const date = new Date()
 		const [time, timeFormat] = date.toLocaleTimeString().split(' ')
 
 		document.querySelector('#app').innerHTML = `
-			<div class="origin-container">
+			<div class="overflow-hidden relative w-screen h-screen bg-slate-800 flex flex-col items-center justify-center text-white">
+				<img class="origin-container" src=${first} alt="first" />
+				<img class="origin-container" src=${second} alt="first" />
+
+			
 				<div class="animate-top w-screen absolute h-1/2 bg-black text-black/0">empty</div>
 				<div class="animate-bot w-screen absolute h-1/2 bg-black text-black/0">empty</div>
 
@@ -15,7 +22,6 @@ export const mainLoad = () => {
 					<div class="text-9xl">
 						<span class="time">${time}</span>
 						<span class="timeFormat">${timeFormat}</span>
-						<button id="changeBack" class="p-10">click me</button>
 					</div>
 					<span class="text-lg text-white/90">First ask yourself who you want to be, and then do what you have to do</span>
 				</div>
@@ -27,15 +33,15 @@ export const mainLoad = () => {
 
 		const changeBackBtn = document.getElementById('changeBack')
 
-		changeBackBtn.addEventListener('click', () => {
-			document.querySelector('.origin-container').classList.add('glitch-active')
+		// changeBackBtn.addEventListener('click', () => {
+		// 	document.querySelector('.origin-container').classList.add('glitch-active')
 
-			setTimeout(() => {
-				document.querySelector('.origin-container').classList.remove('glitch-active')
-				document.querySelector('.origin-container').classList.remove('bg-second')
-				document.querySelector('.origin-container').classList.add('bg-first')
-			}, 500)
-		})
+		// 	setTimeout(() => {
+		// 		document.querySelector('.origin-container').classList.remove('glitch-active')
+		// 		document.querySelector('.origin-container').classList.remove('bg-second')
+		// 		document.querySelector('.origin-container').classList.add('bg-first')
+		// 	}, 500)
+		// })
 
 		setInterval(() => {
 			const date = new Date()
@@ -73,8 +79,8 @@ export const mainLoad = () => {
 			scale: 1.0,
 			scaleMobile: 1.0,
 			birdSize: 0.7,
-			wingSpan: 10.0,
-			separation: 100.0,
+			wingSpan: 20.0,
+			separation: 50.0,
 			alignment: 1.0,
 			cohesion: 65.0,
 			backgroundAlpha: 0.0,

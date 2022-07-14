@@ -4,8 +4,8 @@
 
 @layer utilities 
 	.origin-container
-		@apply overflow-hidden relative w-screen h-screen bg-slate-800 bg-blend-overlay bg-second bg-cover bg-center bg-fixed flex flex-col items-center justify-center text-white
-		animation: anim infinity 0.5s
+		@apply overflow-hidden absolute top-0 left-0 w-screen h-screen mix-blend-overlay object-cover object-center
+		// animation: anim infinity 0.5s
 
 		// @keyframes anim
 		// 	0%
@@ -13,25 +13,25 @@
 		// 	100%
 		// 		@extend .active
 
-	.glitch-active
-		&::before
-			content: ''
-			@apply absolute w-screen h-screen bg-blend-overlay bg-first bg-cover bg-center bg-fixed
-			animation: anim 0.3s infinite
+	// .glitch-active
+	// 	&::before
+	// 		content: ''
+	// 		@apply absolute w-screen h-screen bg-blend-overlay bg-first bg-cover bg-center bg-fixed
+	// 		animation: anim 0.3s infinite
 
-			@keyframes anim
-				0%
-					@apply border-l-green-600
-					clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)
-				10%
-					@apply bg-orange-500	
-					clip-path: polygon(25% 0%, 100% 0%, 75% 50%, 0% 50%)
-				10%
-					@apply bg-cyan-500	
-					clip-path: polygon(25% 0%, 100% 0%, 75% 50%, 0% 50%)	
-				100%
-					@apply bg-black
-					clip-path: polygon(100%)
+	// 		@keyframes anim
+	// 			0%
+	// 				@apply border-l-green-600
+	// 				clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)
+	// 			10%
+	// 				@apply bg-orange-500	
+	// 				clip-path: polygon(25% 0%, 100% 0%, 75% 50%, 0% 50%)
+	// 			10%
+	// 				@apply bg-cyan-500	
+	// 				clip-path: polygon(25% 0%, 100% 0%, 75% 50%, 0% 50%)	
+	// 			100%
+	// 				@apply bg-black
+	// 				clip-path: polygon(100%)
 					
 
 			
